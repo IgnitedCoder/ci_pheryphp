@@ -53,6 +53,30 @@ MY_Controller:
     //note the use of ->jquery() - yes you can do all kinds of cool jquery stuff.
     //In this case we're setting a div with the class of .main equal to the returned view
     //and then we're calling a javascript function called filter();
+    return $response;
  }
+
+    //Other cools things you can do
+    //checkout the phery docs, they are extensive.
+
+    public ph_showmestuff() {
+
+    $response = PheryResponse::factory();
+
+    $response->jquery('#submit_order')->show()
+              ->jquery('#door-options')->show()
+              ->jquery('#search_fixtures')->show()
+              ->jquery('#door-selector')->show()
+              ->jquery('#edit_order')->hide()
+              ->jquery('#confirm_order')->hide()
+              ->jquery('#state')->val('new')
+              ->jquery('#confirm')->val('')
+              ->jquery('.del')->show()
+              ->jquery('#delete_fixture')->show()
+              ->script('grid.setOptions({editable:true});grid.render();');
+
+    return $response;
+
+    }
 
 ```
