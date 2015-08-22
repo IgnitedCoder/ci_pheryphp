@@ -19,17 +19,9 @@ For a demo on what you can do with phery php see: https://github.com/pheryjs/phe
 
 View:
 
-```html
-
-   <button data-remote="testmethod" >Call ph_testmethod in target class</button>
-
-```
-
-    or equivalent
-
 ```php
 
-   <?php echo phery::link_to('Call ph_testmethod in target class', 'testmethod', array('tag' => 'button')); ?>
+   <?php echo Phery::link_to('Call a function named ph_test in target class', 'testmethod', array('tag' => 'button')); ?>
 
 ```
 
@@ -88,5 +80,13 @@ MY_Controller:
     return $response;
 
     }
+
+    //And finally forms
+
+    <?php echo Phery::form_for('/url-to-action/or/empty-means-current-url', 'function_name', array('class' => 'form', 'id' => 'form_id', 'submit' => array('disabled' => true, 'all' => true))) ?>
+        <input type="text" name="text">
+        <input type="password" name="pass">
+        <input type="submit" value="Send">
+    </form>
 
 ```
