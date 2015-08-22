@@ -21,7 +21,9 @@ View:
 
 ```php
 
-   <?php echo Phery::link_to('Call a function named ph_test in target class', 'testmethod', array('tag' => 'button')); ?>
+    <script src="<?php echo base_url('assets/js/jquery.js');?>"></script>
+    <script src="<?php echo base_url('assets/js/phery.js');?>"></script>
+    <?php echo Phery::link_to('Call a function named ph_test in target class', 'testmethod', array('tag' => 'button')); ?>
 
 ```
 
