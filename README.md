@@ -19,9 +19,15 @@ For a demo on what you can do with phery php see: https://github.com/pheryjs/phe
 
 View:
 
+    ```html
    <button data-remote="testmethod" >Call ph_testmethod in target class</button>
+    ```
+
     or equivalent
+
+    ```php
    <?php echo phery::link_to('Call ph_testmethod in target class', 'testmethod', array('tag' => 'button')); ?>
+    ```
 
 You can initilize the phery utility in your global MY_Controller class or in the Controller class you care to use it in.
 
