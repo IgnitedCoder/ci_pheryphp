@@ -1,6 +1,9 @@
 # ci_pheryphp
-A simple class that allows you to use the popular phery-php library for unobtrusive ajax in CodeIgniter.
+A simple class that makes it easy for you to use the popular phery-php library for unobtrusive ajax in CodeIgniter.
 
+This is a work in progress. If you find bugs or plan to update this library then please do so and submit a PR.
+
+Happy CI Coding.
 
 Initialize phery by scanning the target class for response methods.
 This eliminates the need for phery::instance->set( ... array of response methods ), for quick setup.
@@ -11,6 +14,8 @@ with the same name prefixed by "ph_". Usage example:
 Required Assets:
 
 Please include the phery.js library included in the assets folder "/pheryutils/assets/phery.js" into your main templates header.
+
+For a demo on what you can do with phery php see: https://github.com/pheryjs/phery
 
 View:
 
