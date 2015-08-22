@@ -59,7 +59,7 @@ MY_Controller:
     //Other cools things you can do
     //checkout the phery docs, they are extensive.
 
-    public ph_showmestuff() {
+    public function ph_dojquerystuff() {
 
     $response = PheryResponse::factory();
 
