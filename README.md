@@ -37,6 +37,7 @@ MY_Controller:
     // set up some stuff before heading off to phery land:
     $this->load->library("pheryutils");
     $this->phery = PheryResponse::factory();
+    $this->pheryutils->init($this); //initialize the phery handler.
  }
 
  public function ph_testmethod($data = NULL) {  // note the function prefix of ph_
