@@ -31,7 +31,7 @@ MY_Controller:
 
  var $phery = null;
 
- public function __construct() {
+ public function __constructor() {
     // set up some stuff before heading off to phery land:
     $this->load->library("pheryutils");
     $this->phery = PheryResponse::factory();
