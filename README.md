@@ -23,7 +23,9 @@ View:
 
     <script src="<?php echo base_url('assets/js/jquery.js');?>"></script>
     <script src="<?php echo base_url('assets/js/phery.js');?>"></script>
-    <?php echo Phery::link_to('Call a function named ph_test in target class', 'testmethod', array('tag' => 'button')); ?>
+    <?php echo Phery::link_to('Test Phery', 'test', array('tag' => 'button')); ?>
+    //or
+    <button data-phery-remote="test" > Test Phery </button>
 
 ```
 
